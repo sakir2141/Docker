@@ -1,0 +1,23 @@
+   service docker status
+   service docker start
+   service docker stop
+   service docker restart
+   docker images
+   docker ps
+   docker ps -a
+   docker run -it --name contaier_name image_name ---for create container using image
+   docker pull image_name -- pull image from docker hub
+   docker tag image_name user/image_name to tag the image 
+   docker push user/image_name -- for upload image on docker hub
+   docker commit contaier_name new_image_name -- to make image from existing container
+   docker rm contaier_name --to delete a container
+   docker stop contaier_name to stop container
+   docekr attach container -- to go inside the container
+   docker build -t image_name -- to create image using docker file
+   docker run -it --name contaier_name -v /volume_name image_name --to create a volume
+   docker run -it --name contaier_name --privileged=true --volimes-from contaier_name image_name -- to share  volume to another container
+   docker rmi -f $(docker images -q) -- for delete all images
+   docker stop $(docekr ps -a -q)  -- for stop all running container
+   docker rm $(docekr ps -a -q) -- for delete all stoped container
+   
+   
